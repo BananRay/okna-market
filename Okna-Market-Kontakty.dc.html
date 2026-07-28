@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>body{margin:0;background:#fff}a{color:#d81f26}a:hover{color:#b0161c}</style>
+</helmet>
+
+<div style="font-family:'IBM Plex Sans',system-ui,sans-serif;color:#10233f;font-size:16px;line-height:1.5;background:#fff">
+
+  <div style="background:#10233f;position:sticky;top:0;z-index:20">
+    <div style="max-width:1180px;margin:0 auto;padding:10px 18px;display:flex;align-items:center;gap:10px">
+      <a href="Okna-Market-Glavnaya.dc.html" style="margin-right:auto"><img src="assets/logo-cut.png" alt="Окна-Маркет" style="height:30px;width:auto;display:block"></a>
+      <a href="tel:+79689531320" style="display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 16px;background:#d81f26;color:#fff;text-decoration:none;font:600 15px 'IBM Plex Sans',sans-serif"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>Позвонить</a>
+      <button type="button" onClick="{{ toggleMenu }}" aria-label="Меню" style="display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;background:transparent;border:1px solid #ffffff59;color:#fff;cursor:pointer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="background:#0b1a30;border-top:1px solid #ffffff26">
+        <div style="max-width:1180px;margin:0 auto;padding:4px 18px 16px;display:flex;flex-direction:column">
+          <a href="Okna-Market-Glavnaya.dc.html" style="padding:15px 0;color:#fff;text-decoration:none;font:600 16px 'IBM Plex Sans',sans-serif;border-bottom:1px solid #ffffff1f">Главная</a>
+          <a href="Okna-Market-Katalog.dc.html" style="padding:15px 0;color:#fff;text-decoration:none;font:600 16px 'IBM Plex Sans',sans-serif;border-bottom:1px solid #ffffff1f">Каталог</a>
+          <a href="Okna-Market-Kompaniya.dc.html" style="padding:15px 0;color:#fff;text-decoration:none;font:600 16px 'IBM Plex Sans',sans-serif;border-bottom:1px solid #ffffff1f">О компании</a>
+          <a href="Okna-Market-Garantii.dc.html" style="padding:15px 0;color:#fff;text-decoration:none;font:600 16px 'IBM Plex Sans',sans-serif;border-bottom:1px solid #ffffff1f">Гарантии</a>
+          <a href="Okna-Market-Kontakty.dc.html" style="padding:15px 0;color:#d81f26;text-decoration:none;font:600 16px 'IBM Plex Sans',sans-serif;border-bottom:1px solid #ffffff1f">Контакты</a>
+          <a href="Okna-Market-Sovety.dc.html" style="padding:15px 0;color:#fff;text-decoration:none;font:600 16px 'IBM Plex Sans',sans-serif">Советы</a>
+          <a href="tel:+79689531320" style="margin-top:14px;display:flex;align-items:center;justify-content:center;min-height:50px;background:#d81f26;color:#fff;text-decoration:none;font:600 16px 'IBM Plex Sans',sans-serif">+7 968 953-13-20</a>
+        </div>
+      </div>
+    </sc-if>
+  </div>
+
+  <div style="background:#eef1f5;border-bottom:2px solid #10233f">
+    <div style="max-width:1180px;margin:0 auto;padding:clamp(24px,3.5vw,48px) 18px">
+      <div style="font:500 11px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#d81f26">КОНТАКТЫ / МОСКВА И МО</div>
+      <h1 style="font:800 clamp(30px,5vw,50px)/1.03 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;margin:12px 0 12px;text-transform:uppercase">Позвоните — ответит мастер, а не робот</h1>
+      <p style="margin:0 0 22px;color:#10233fc4;font-size:clamp(16px,1.6vw,18px);max-width:36em">Ежедневно с 9:00 до 20:00. Расскажите, что нужно остеклить — согласуем время замера.</p>
+      <a href="tel:+79689531320" style="display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 28px;background:#d81f26;color:#fff;text-decoration:none;font:600 20px 'IBM Plex Sans',sans-serif">+7 968 953-13-20</a>
+    </div>
+  </div>
+
+  <div style="max-width:1180px;margin:0 auto;padding:clamp(24px,3.5vw,48px) 18px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(20px,3vw,40px);align-items:start">
+    <div style="background:#eef1f5;padding:clamp(20px,2.5vw,32px)">
+      <div style="font:500 11px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#d81f26">РАСЧЁТ / ШАГ 1 ИЗ 2</div>
+      <h2 style="font:800 clamp(22px,2.6vw,30px)/1.06 'Bricolage Grotesque',sans-serif;margin:10px 0 16px;text-transform:uppercase">Прикинуть стоимость</h2>
+      <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+      <div>
+        <div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99;margin-bottom:8px">ТИП КОНСТРУКЦИИ</div>
+        <div style="display:flex;margin-bottom:18px;border:1px solid #10233f44">
+          <button type="button" onClick="{{ setPvc }}" style="{{ segPvc }}">ПВХ</button>
+          <button type="button" onClick="{{ setWood }}" style="{{ segWood }}">Дерево</button>
+          <button type="button" onClick="{{ setAlu }}" style="{{ segAlu }}">Алюминий</button>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:18px">
+          <div><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99;margin-bottom:6px">ШИРИНА, ММ</div><input type="number" value="{{ w }}" onInput="{{ onW }}" onBlur="{{ onWBlur }}" style="width:100%;min-height:48px;padding:0 12px;background:#fff;border:1px solid #10233f33;color:#10233f;font:400 16px 'IBM Plex Sans',sans-serif;border-radius:0"></div>
+          <div><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99;margin-bottom:6px">ВЫСОТА, ММ</div><input type="number" value="{{ h }}" onInput="{{ onH }}" onBlur="{{ onHBlur }}" style="width:100%;min-height:48px;padding:0 12px;background:#fff;border:1px solid #10233f33;color:#10233f;font:400 16px 'IBM Plex Sans',sans-serif;border-radius:0"></div>
+        </div>
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:14px 0;border-top:1px solid #10233f33;border-bottom:1px solid #10233f33;margin-bottom:18px">
+          <div><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99">ОРИЕНТИРОВОЧНО</div><div style="font:800 clamp(22px,2.6vw,30px)/1.1 'Bricolage Grotesque',sans-serif;margin-top:4px">{{ priceText }}</div></div>
+          <div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99">{{ areaText }}</div>
+        </div>
+        <div style="display:grid;gap:12px">
+          <div><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99;margin-bottom:6px">ИМЯ</div><input type="text" value="{{ name }}" onInput="{{ onName }}" placeholder="Как к вам обращаться" style="width:100%;min-height:48px;padding:0 12px;background:#fff;border:1px solid #10233f33;color:#10233f;font:400 16px 'IBM Plex Sans',sans-serif;border-radius:0"></div>
+          <div><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99;margin-bottom:6px">ТЕЛЕФОН</div><input type="tel" value="{{ phone }}" onInput="{{ onPhone }}" placeholder="+7 900 000-00-00" style="width:100%;min-height:48px;padding:0 12px;background:#fff;border:1px solid #10233f33;color:#10233f;font:400 16px 'IBM Plex Sans',sans-serif;border-radius:0"></div>
+          <sc-if value="{{ hasError }}" hint-placeholder-val="{{ false }}"><div style="font-size:14px;color:#d81f26">{{ error }}</div></sc-if>
+          <button type="button" onClick="{{ onSubmit }}" style="display:flex;align-items:center;justify-content:center;min-height:54px;background:#10233f;color:#fff;border:0;cursor:pointer;font:600 16px 'IBM Plex Sans',sans-serif">Отправить заявку</button>
+          <div style="font-size:13px;color:#10233f99">Перезвоним в течение 15 минут в рабочее время.</div>
+        </div>
+      </div>
+      </sc-if>
+      <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:8px 0">
+        <div style="font:500 11px 'IBM Plex Mono',monospace;color:#d81f26">ЗАЯВКА ПРИНЯТА</div>
+        <h3 style="font:800 clamp(22px,2.6vw,30px)/1.08 'Bricolage Grotesque',sans-serif;margin:10px 0 10px;text-transform:uppercase">Спасибо, перезвоним в течение 15 минут</h3>
+        <p style="margin:0 0 18px;color:#10233fa6">Если нужно быстрее — позвоните сами, ответит мастер.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a href="tel:+79689531320" style="display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:#d81f26;color:#fff;text-decoration:none;font:600 16px 'IBM Plex Sans',sans-serif">+7 968 953-13-20</a>
+          <button type="button" onClick="{{ reset }}" style="min-height:52px;padding:0 20px;background:transparent;border:1px solid #10233f44;color:#10233f;cursor:pointer;font:600 15px 'IBM Plex Sans',sans-serif">Отправить ещё одну</button>
+        </div>
+      </div>
+      </sc-if>
+    </div>
+    <div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2px;background:#10233f22;margin-bottom:16px">
+        <div style="background:#fff;padding:18px"><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99">ТЕЛЕФОН</div><a href="tel:+79689531320" style="display:block;margin-top:6px;font:700 19px 'Bricolage Grotesque',sans-serif;color:#10233f;text-decoration:none">+7 968 953-13-20</a></div>
+        <div style="background:#fff;padding:18px"><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99">ПОЧТА</div><a href="mailto:info@okna-market.ru" style="display:block;margin-top:6px;font:700 17px 'Bricolage Grotesque',sans-serif;color:#10233f;text-decoration:none">info@okna-market.ru</a></div>
+        <div style="background:#fff;padding:18px"><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99">ЧАСЫ РАБОТЫ</div><div style="margin-top:6px;font:700 17px 'Bricolage Grotesque',sans-serif">Ежедневно 9:00–20:00</div></div>
+        <div style="background:#fff;padding:18px"><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99">ЗОНА РАБОТ</div><div style="margin-top:6px;font:700 17px 'Bricolage Grotesque',sans-serif">Москва и область</div></div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px">
+        <a href="https://wa.me/79689531320" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 18px;border:1px solid #10233f44;color:#10233f;text-decoration:none;font:600 15px 'IBM Plex Sans',sans-serif"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>WhatsApp</a>
+        <a href="https://t.me/+79689531320" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 18px;border:1px solid #10233f44;color:#10233f;text-decoration:none;font:600 15px 'IBM Plex Sans',sans-serif"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>Telegram</a>
+      </div>
+      <div style="min-height:clamp(240px,28vw,340px);display:flex;align-items:flex-end;padding:12px;background:repeating-linear-gradient(90deg,#10233f14,#10233f14 1px,transparent 1px,transparent 28px),repeating-linear-gradient(0deg,#10233f14,#10233f14 1px,transparent 1px,transparent 28px),#f4f6f8;border:1px solid #10233f33"><span style="font:11px 'IBM Plex Mono',monospace;color:#10233f99">карта: зона обслуживания — Москва и МО</span></div>
+    </div>
+  </div>
+
+  <div style="background:#d81f26;color:#fff;margin-top:clamp(28px,4vw,52px)">
+    <div style="max-width:1180px;margin:0 auto;padding:clamp(26px,4vw,48px) 18px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <h2 style="font:800 clamp(22px,3vw,34px)/1.06 'Bricolage Grotesque',sans-serif;margin:0;color:#fff;max-width:20em;text-transform:uppercase">Замер бесплатный, даже если не закажете</h2>
+      <a href="tel:+79689531320" style="display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;background:#fff;color:#d81f26;text-decoration:none;font:600 18px 'IBM Plex Sans',sans-serif">+7 968 953-13-20</a>
+    </div>
+  </div>
+
+  <div style="background:#10233f;color:#fff">
+    <div style="max-width:1180px;margin:0 auto;padding:clamp(26px,3vw,40px) 18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px">
+      <div><img src="assets/logo-cut.png" alt="Окна-Маркет" style="height:28px;width:auto;display:block"><div style="font:500 11px 'IBM Plex Mono',monospace;color:#ffffff99;margin-top:12px">ООО «ОКНА-МАРКЕТ» / С 2004</div></div>
+      <div style="display:flex;flex-direction:column;gap:9px">
+        <a href="Okna-Market-Katalog.dc.html" style="color:#fff;text-decoration:none;font-size:15px">Каталог</a>
+        <a href="Okna-Market-Kompaniya.dc.html" style="color:#fff;text-decoration:none;font-size:15px">О компании</a>
+        <a href="Okna-Market-Garantii.dc.html" style="color:#fff;text-decoration:none;font-size:15px">Гарантии</a>
+        <a href="Okna-Market-Kontakty.dc.html" style="color:#fff;text-decoration:none;font-size:15px">Контакты</a>
+        <a href="Okna-Market-Sovety.dc.html" style="color:#fff;text-decoration:none;font-size:15px">Советы</a>
+      </div>
+      <div style="color:#ffffffb8;font-size:15px">Москва и Московская область<br>Ежедневно 9:00–20:00<br><a href="tel:+79689531320" style="color:#fff;text-decoration:none">+7 968 953-13-20</a></div>
+    </div>
+  </div>
+
+  <div style="position:sticky;bottom:0;display:flex;background:#fff;border-top:2px solid #10233f">
+    <a href="tel:+79689531320" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;background:#d81f26;color:#fff;text-decoration:none;font:600 16px 'IBM Plex Sans',sans-serif">Позвонить</a>
+    <a href="Okna-Market-Kontakty.dc.html" style="display:flex;align-items:center;justify-content:center;min-height:54px;padding:0 22px;background:#10233f;color:#fff;text-decoration:none;font:600 15px 'IBM Plex Sans',sans-serif">Замер</a>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const RATE = { pvc: 7500, wood: 15000, alu: 11000 };
+
+class Component extends DCLogic {
+  state = { menuOpen: false, type: 'pvc', w: '1300', h: '1400', name: '', phone: '', sent: false, error: '' };
+
+  fmt(n) { return Math.round(n).toLocaleString('ru-RU'); }
+  clamp(v) { const n = Number(v) || 0; return Math.min(4000, Math.max(300, n)); }
+
+  submit() {
+    const s = this.state;
+    const digits = (s.phone.match(/\d/g) || []).length;
+    if (s.name.trim().length < 2) { this.setState({ error: 'Укажите, как к вам обращаться' }); return; }
+    if (digits < 10) { this.setState({ error: 'Проверьте номер телефона' }); return; }
+    this.setState({ sent: true, error: '' });
+  }
+
+  renderVals() {
+    const s = this.state;
+    const m2 = Math.max(0.3, (this.clamp(s.w) / 1000) * (this.clamp(s.h) / 1000));
+    const base = m2 * RATE[s.type];
+    const lo = Math.round(base * 0.9 / 500) * 500;
+    const hi = Math.round(base * 1.3 / 500) * 500;
+    const seg = k => 'flex:1;text-align:center;padding:14px 6px;cursor:pointer;border:0;font:600 14px "IBM Plex Sans",sans-serif;'
+      + (k === s.type ? 'background:#d81f26;color:#fff;' : 'background:transparent;color:#10233f;')
+      + (k !== 'pvc' ? 'border-left:1px solid #10233f44;' : '');
+    return {
+      menuOpen: s.menuOpen,
+      toggleMenu: () => this.setState(p => ({ menuOpen: !p.menuOpen })),
+      segPvc: seg('pvc'), segWood: seg('wood'), segAlu: seg('alu'),
+      setPvc: () => this.setState({ type: 'pvc' }),
+      setWood: () => this.setState({ type: 'wood' }),
+      setAlu: () => this.setState({ type: 'alu' }),
+      w: s.w, h: s.h,
+      onW: e => this.setState({ w: e.target.value }),
+      onH: e => this.setState({ h: e.target.value }),
+      onWBlur: e => this.setState({ w: String(this.clamp(e.target.value)) }),
+      onHBlur: e => this.setState({ h: String(this.clamp(e.target.value)) }),
+      priceText: this.fmt(lo) + ' – ' + this.fmt(hi) + ' ₽',
+      areaText: m2.toFixed(2).replace('.', ',') + ' м²',
+      name: s.name, phone: s.phone, sent: s.sent, notSent: !s.sent,
+      hasError: !!s.error, error: s.error,
+      onName: e => this.setState({ name: e.target.value, error: '' }),
+      onPhone: e => this.setState({ phone: e.target.value, error: '' }),
+      onSubmit: e => { if (e && e.preventDefault) e.preventDefault(); this.submit(); },
+      reset: () => this.setState({ sent: false, name: '', phone: '' }),
+    };
+  }
+}
+</script>
+</body>
+</html>

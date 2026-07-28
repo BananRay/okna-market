@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;700&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Petrona:ital,wght@0,400;0,600;1,400&family=Manrope:wght@400;500;700&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#dcd8d1;font-family:Karla,system-ui,sans-serif}
+.dv-turn{padding:40px 44px 32px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}
+.dv-tid{font:500 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}
+.dv-tname{font:500 13px/1.2 system-ui,sans-serif;color:#1a1a1a}
+.dv-opts{display:flex;flex-wrap:wrap;gap:36px;align-items:flex-start}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}
+.dv-oid{font:500 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}
+.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11.5px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.6)}
+.dv-card{width:390px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.22)}
+.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}
+.dv-next{margin:22px 0 0;font:12px/1.6 system-ui,sans-serif;color:rgba(0,0,0,.55);max-width:60em}
+</style>
+</helmet>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Редизайн — три направления, мобильная главная</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>«Мастерская» — тёплая бумага, засечный набор, живой человеческий тон</div>
+<div class="dv-card" style="background:#f6f1e7;color:#1e1b16;font-family:Karla,sans-serif;font-size:15px;line-height:1.55">
+
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;border-bottom:1px solid #1e1b1622">
+    <img src="assets/logo.png" alt="Окна-Маркет" style="height:26px;width:auto">
+    <a href="tel:+79689531320" style="display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 16px;background:#b4451d;color:#f6f1e7;text-decoration:none;border-radius:999px;font:500 14px Karla,sans-serif"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>Позвонить</a>
+  </div>
+
+  <div style="padding:28px 20px 24px">
+    <div style="font:500 11px/1 Karla,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#b4451d">Окна-Маркет · с 2004 года · Москва и МО</div>
+    <h1 style="font:400 44px/1.02 'Instrument Serif',serif;margin:14px 0 12px;letter-spacing:-.01em">Ставим окна так,<br>как поставили бы <em style="font-style:italic;color:#b4451d">себе</em></h1>
+    <p style="margin:0 0 20px;color:#1e1b16bf;font-size:16px">Приедем, замерим бесплатно, честно скажем, что нужно, а что нет. Монтаж — своими мастерами, гарантия 20 лет.</p>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <a href="tel:+79689531320" style="display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;background:#b4451d;color:#f6f1e7;text-decoration:none;font:500 17px Karla,sans-serif;border-radius:2px">+7 968 953-13-20</a>
+      <a href="#" style="display:flex;align-items:center;justify-content:center;min-height:52px;border:1px solid #1e1b1655;color:#1e1b16;text-decoration:none;font:500 16px Karla,sans-serif;border-radius:2px">Заказать замер</a>
+    </div>
+  </div>
+
+  <div style="height:230px;display:flex;align-items:flex-end;padding:14px;margin:0 20px;background:repeating-linear-gradient(135deg,#1e1b1614,#1e1b1614 9px,#1e1b1607 9px,#1e1b1607 18px);border:1px solid #1e1b1622"><span style="font:11px ui-monospace,Menlo,monospace;color:#1e1b1699">фото: мастер за монтажом окна</span></div>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:24px 20px 0;background:#1e1b1622">
+    <div style="background:#f6f1e7;padding:16px 12px"><div style="font:400 30px/1 'Instrument Serif',serif">20</div><div style="font-size:12px;color:#1e1b1699;margin-top:4px">лет на рынке</div></div>
+    <div style="background:#f6f1e7;padding:16px 12px"><div style="font:400 30px/1 'Instrument Serif',serif">5000</div><div style="font-size:12px;color:#1e1b1699;margin-top:4px">клиентов</div></div>
+    <div style="background:#f6f1e7;padding:16px 12px"><div style="font:400 30px/1 'Instrument Serif',serif">20</div><div style="font-size:12px;color:#1e1b1699;margin-top:4px">лет гарантии</div></div>
+  </div>
+
+  <div style="margin:28px 20px 0;padding:22px 18px;background:#efe7d7;border:1px solid #1e1b1622">
+    <h2 style="font:400 28px/1.05 'Instrument Serif',serif;margin:0 0 6px">Прикинем стоимость</h2>
+    <p style="margin:0 0 16px;font-size:14px;color:#1e1b16b3">Два шага — и мы перезвоним с расчётом.</p>
+    <div style="font:500 11px Karla,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#1e1b1699;margin-bottom:8px">Тип окна</div>
+    <div style="display:flex;gap:8px;margin-bottom:16px">
+      <span style="flex:1;text-align:center;padding:11px 6px;background:#b4451d;color:#f6f1e7;font:500 14px Karla,sans-serif">ПВХ</span>
+      <span style="flex:1;text-align:center;padding:11px 6px;border:1px solid #1e1b1644;font-size:14px">Дерево</span>
+      <span style="flex:1;text-align:center;padding:11px 6px;border:1px solid #1e1b1644;font-size:14px">Алюминий</span>
+    </div>
+    <div style="display:flex;gap:10px;margin-bottom:16px">
+      <div style="flex:1"><div style="font:500 11px Karla,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#1e1b1699;margin-bottom:6px">Ширина, мм</div><div style="min-height:46px;display:flex;align-items:center;padding:0 12px;background:#f6f1e7;border:1px solid #1e1b1644;color:#1e1b1699">1300</div></div>
+      <div style="flex:1"><div style="font:500 11px Karla,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#1e1b1699;margin-bottom:6px">Высота, мм</div><div style="min-height:46px;display:flex;align-items:center;padding:0 12px;background:#f6f1e7;border:1px solid #1e1b1644;color:#1e1b1699">1400</div></div>
+    </div>
+    <a href="tel:+79689531320" style="display:flex;align-items:center;justify-content:center;min-height:50px;background:#1e1b16;color:#f6f1e7;text-decoration:none;font:500 16px Karla,sans-serif">Узнать цену по телефону</a>
+  </div>
+
+  <div style="padding:32px 20px 8px">
+    <h2 style="font:400 30px/1.05 'Instrument Serif',serif;margin:0 0 16px">Что мы делаем</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div style="display:flex;gap:14px;align-items:center;padding-bottom:12px;border-bottom:1px solid #1e1b1622"><div style="width:76px;height:60px;flex:none;background:repeating-linear-gradient(135deg,#1e1b1614,#1e1b1614 8px,#1e1b1607 8px,#1e1b1607 16px);border:1px solid #1e1b1622"></div><div><div style="font:400 20px/1.1 'Instrument Serif',serif">Окна ПВХ</div><div style="font-size:13px;color:#1e1b16a6">Тёплые профили для квартир и домов</div></div></div>
+      <div style="display:flex;gap:14px;align-items:center;padding-bottom:12px;border-bottom:1px solid #1e1b1622"><div style="width:76px;height:60px;flex:none;background:repeating-linear-gradient(135deg,#1e1b1614,#1e1b1614 8px,#1e1b1607 8px,#1e1b1607 16px);border:1px solid #1e1b1622"></div><div><div style="font:400 20px/1.1 'Instrument Serif',serif">Деревянные окна</div><div style="font-size:13px;color:#1e1b16a6">Клеёный брус, живой материал</div></div></div>
+      <div style="display:flex;gap:14px;align-items:center;padding-bottom:12px;border-bottom:1px solid #1e1b1622"><div style="width:76px;height:60px;flex:none;background:repeating-linear-gradient(135deg,#1e1b1614,#1e1b1614 8px,#1e1b1607 8px,#1e1b1607 16px);border:1px solid #1e1b1622"></div><div><div style="font:400 20px/1.1 'Instrument Serif',serif">Балконы и лоджии</div><div style="font-size:13px;color:#1e1b16a6">Тёплое и холодное остекление</div></div></div>
+      <div style="display:flex;gap:14px;align-items:center;padding-bottom:12px;border-bottom:1px solid #1e1b1622"><div style="width:76px;height:60px;flex:none;background:repeating-linear-gradient(135deg,#1e1b1614,#1e1b1614 8px,#1e1b1607 8px,#1e1b1607 16px);border:1px solid #1e1b1622"></div><div><div style="font:400 20px/1.1 'Instrument Serif',serif">Алюминий и витражи</div><div style="font-size:13px;color:#1e1b16a6">Панорамы и входные группы</div></div></div>
+    </div>
+    <a href="#" style="display:inline-block;margin-top:14px;color:#b4451d;font:500 15px Karla,sans-serif">Весь каталог →</a>
+  </div>
+
+  <div style="margin:24px 0 0;padding:28px 20px;background:#efe7d7">
+    <h2 style="font:400 30px/1.05 'Instrument Serif',serif;margin:0 0 14px">Какие окна выбрать</h2>
+    <div style="display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;font-size:13px">
+      <div style="padding:8px 6px;color:#1e1b1699;font-size:11px;text-transform:uppercase;letter-spacing:.08em"></div>
+      <div style="padding:8px 6px;color:#1e1b1699;font-size:11px;text-transform:uppercase;letter-spacing:.08em">ПВХ</div>
+      <div style="padding:8px 6px;color:#1e1b1699;font-size:11px;text-transform:uppercase;letter-spacing:.08em">Дерево</div>
+      <div style="padding:8px 6px;color:#1e1b1699;font-size:11px;text-transform:uppercase;letter-spacing:.08em">Алюм.</div>
+      <div style="padding:10px 6px;border-top:1px solid #1e1b1622">Цена</div><div style="padding:10px 6px;border-top:1px solid #1e1b1622">низкая</div><div style="padding:10px 6px;border-top:1px solid #1e1b1622">выше</div><div style="padding:10px 6px;border-top:1px solid #1e1b1622">средняя</div>
+      <div style="padding:10px 6px;border-top:1px solid #1e1b1622">Тепло</div><div style="padding:10px 6px;border-top:1px solid #1e1b1622">высокое</div><div style="padding:10px 6px;border-top:1px solid #1e1b1622">высокое</div><div style="padding:10px 6px;border-top:1px solid #1e1b1622">среднее</div>
+      <div style="padding:10px 6px;border-top:1px solid #1e1b1622">Срок службы</div><div style="padding:10px 6px;border-top:1px solid #1e1b1622">40 лет</div><div style="padding:10px 6px;border-top:1px solid #1e1b1622">50 лет</div><div style="padding:10px 6px;border-top:1px solid #1e1b1622">50 лет</div>
+      <div style="padding:10px 6px;border-top:1px solid #1e1b1622">Уход</div><div style="padding:10px 6px;border-top:1px solid #1e1b1622">простой</div><div style="padding:10px 6px;border-top:1px solid #1e1b1622">нужен</div><div style="padding:10px 6px;border-top:1px solid #1e1b1622">простой</div>
+    </div>
+  </div>
+
+  <div style="padding:32px 20px 0">
+    <h2 style="font:400 30px/1.05 'Instrument Serif',serif;margin:0 0 18px">Как проходит работа</h2>
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;gap:14px"><div style="font:400 26px/1 'Instrument Serif',serif;color:#b4451d;width:34px;flex:none">01</div><div><div style="font-weight:700;font-size:16px">Звонок и замер</div><div style="font-size:14px;color:#1e1b16a6">Приедем в удобное время, замерим бесплатно.</div></div></div>
+      <div style="display:flex;gap:14px"><div style="font:400 26px/1 'Instrument Serif',serif;color:#b4451d;width:34px;flex:none">02</div><div><div style="font-weight:700;font-size:16px">Расчёт и договор</div><div style="font-size:14px;color:#1e1b16a6">Фиксируем цену, сроки и состав работ.</div></div></div>
+      <div style="display:flex;gap:14px"><div style="font:400 26px/1 'Instrument Serif',serif;color:#b4451d;width:34px;flex:none">03</div><div><div style="font-weight:700;font-size:16px">Монтаж</div><div style="font-size:14px;color:#1e1b16a6">Ставят наши мастера, не подрядчики.</div></div></div>
+      <div style="display:flex;gap:14px"><div style="font:400 26px/1 'Instrument Serif',serif;color:#b4451d;width:34px;flex:none">04</div><div><div style="font-weight:700;font-size:16px">Сдача и уборка</div><div style="font-size:14px;color:#1e1b16a6">Проверяем всё вместе, мусор увозим.</div></div></div>
+    </div>
+  </div>
+
+  <div style="margin:32px 20px 0;padding:22px 18px;border:1px solid #1e1b1633">
+    <div style="font:500 11px Karla,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#b4451d">Гарантии и документы</div>
+    <h2 style="font:400 28px/1.05 'Instrument Serif',serif;margin:8px 0 14px">20 лет гарантии — письменно, в договоре</h2>
+    <div style="display:flex;gap:10px">
+      <div style="flex:1;height:100px;background:repeating-linear-gradient(135deg,#1e1b1614,#1e1b1614 8px,#1e1b1607 8px,#1e1b1607 16px);border:1px solid #1e1b1622;display:flex;align-items:flex-end;padding:8px"><span style="font:10px ui-monospace,Menlo,monospace;color:#1e1b1699">сертификат</span></div>
+      <div style="flex:1;height:100px;background:repeating-linear-gradient(135deg,#1e1b1614,#1e1b1614 8px,#1e1b1607 8px,#1e1b1607 16px);border:1px solid #1e1b1622;display:flex;align-items:flex-end;padding:8px"><span style="font:10px ui-monospace,Menlo,monospace;color:#1e1b1699">договор</span></div>
+      <div style="flex:1;height:100px;background:repeating-linear-gradient(135deg,#1e1b1614,#1e1b1614 8px,#1e1b1607 8px,#1e1b1607 16px);border:1px solid #1e1b1622;display:flex;align-items:flex-end;padding:8px"><span style="font:10px ui-monospace,Menlo,monospace;color:#1e1b1699">паспорт</span></div>
+    </div>
+  </div>
+
+  <div style="padding:32px 20px 0">
+    <h2 style="font:400 30px/1.05 'Instrument Serif',serif;margin:0 0 14px">Частые вопросы</h2>
+    <div style="border-top:1px solid #1e1b1622">
+      <div style="padding:14px 0;border-bottom:1px solid #1e1b1622"><div style="display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:15px">Сколько ждать монтаж?<span style="color:#b4451d">−</span></div><p style="margin:8px 0 0;font-size:14px;color:#1e1b16a6">Обычно 5–10 рабочих дней после замера: столько занимает изготовление.</p></div>
+      <div style="padding:14px 0;border-bottom:1px solid #1e1b1622;display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:15px">Замер точно бесплатный?<span style="color:#b4451d">+</span></div>
+      <div style="padding:14px 0;border-bottom:1px solid #1e1b1622;display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:15px">Можно ставить окна зимой?<span style="color:#b4451d">+</span></div>
+      <div style="padding:14px 0;border-bottom:1px solid #1e1b1622;display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:15px">Вывозите старые рамы?<span style="color:#b4451d">+</span></div>
+    </div>
+  </div>
+
+  <div style="margin:32px 0 0;padding:28px 20px;background:#1e1b16;color:#f6f1e7">
+    <h2 style="font:400 28px/1.05 'Instrument Serif',serif;margin:0 0 16px;color:#f6f1e7">Что говорят клиенты</h2>
+    <p style="margin:0 0 8px;font:italic 400 19px/1.4 'Instrument Serif',serif">«Работали быстро и аккуратно, окна стоят уже 5 лет — никаких нареканий.»</p>
+    <div style="font-size:13px;color:#f6f1e799;margin-bottom:20px">Марина, Химки</div>
+    <p style="margin:0 0 8px;font:italic 400 19px/1.4 'Instrument Serif',serif">«Замер и монтаж день в день с договором. Спасибо за уборку после работ.»</p>
+    <div style="font-size:13px;color:#f6f1e799">Игорь, Москва</div>
+  </div>
+
+  <div style="padding:32px 20px 0">
+    <h2 style="font:400 30px/1.05 'Instrument Serif',serif;margin:0 0 14px">Советы по выбору</h2>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;gap:12px;align-items:center"><div style="width:64px;height:52px;flex:none;background:repeating-linear-gradient(135deg,#1e1b1614,#1e1b1614 8px,#1e1b1607 8px,#1e1b1607 16px);border:1px solid #1e1b1622"></div><div style="font-size:14px;font-weight:500">Сколько камер нужно профилю в Москве</div></div>
+      <div style="display:flex;gap:12px;align-items:center"><div style="width:64px;height:52px;flex:none;background:repeating-linear-gradient(135deg,#1e1b1614,#1e1b1614 8px,#1e1b1607 8px,#1e1b1607 16px);border:1px solid #1e1b1622"></div><div style="font-size:14px;font-weight:500">Как понять, что окно поставили правильно</div></div>
+      <div style="display:flex;gap:12px;align-items:center"><div style="width:64px;height:52px;flex:none;background:repeating-linear-gradient(135deg,#1e1b1614,#1e1b1614 8px,#1e1b1607 8px,#1e1b1607 16px);border:1px solid #1e1b1622"></div><div style="font-size:14px;font-weight:500">Тёплый балкон: что нужно, кроме окон</div></div>
+    </div>
+  </div>
+
+  <div style="margin-top:32px;padding:26px 20px 26px;border-top:1px solid #1e1b1622">
+    <img src="assets/logo.png" alt="Окна-Маркет" style="height:24px;width:auto;margin-bottom:14px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:14px;margin-bottom:18px">
+      <a href="#" style="color:#1e1b16;text-decoration:none">Каталог</a><a href="#" style="color:#1e1b16;text-decoration:none">О компании</a>
+      <a href="#" style="color:#1e1b16;text-decoration:none">Гарантии</a><a href="#" style="color:#1e1b16;text-decoration:none">Контакты</a>
+    </div>
+    <div style="font-size:14px;color:#1e1b16a6">Москва и Московская область<br>Ежедневно 9:00–20:00</div>
+  </div>
+
+  <div style="position:sticky;bottom:0;display:flex;gap:10px;padding:12px 16px;background:#f6f1e7f2;border-top:1px solid #1e1b1633">
+    <a href="tel:+79689531320" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:50px;background:#b4451d;color:#f6f1e7;text-decoration:none;font:500 16px Karla,sans-serif">Позвонить</a>
+    <a href="#" style="display:flex;align-items:center;justify-content:center;min-height:50px;padding:0 18px;border:1px solid #1e1b1655;color:#1e1b16;text-decoration:none;font:500 15px Karla,sans-serif">Замер</a>
+  </div>
+</div>
+</div>
+
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>«Цех» — фирменный синий и красный из логотипа, техничная сетка, инженерная точность</div>
+<div class="dv-card" style="background:#fff;color:#10233f;font-family:'IBM Plex Sans',sans-serif;font-size:15px;line-height:1.5">
+
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;background:#10233f">
+    <img src="assets/logo.png" alt="Окна-Маркет" style="height:24px;width:auto;filter:brightness(0) invert(1)">
+    <a href="tel:+79689531320" style="display:inline-flex;align-items:center;gap:7px;min-height:42px;padding:0 14px;background:#d81f26;color:#fff;text-decoration:none;font:600 14px 'IBM Plex Sans',sans-serif"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>Позвонить</a>
+  </div>
+
+  <div style="padding:26px 18px 22px;background:#eef1f5;border-bottom:2px solid #10233f">
+    <div style="font:500 11px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#d81f26">ООО «ОКНА-МАРКЕТ» / МОСКВА И МО / С 2004</div>
+    <h1 style="font:800 38px/1.02 'Bricolage Grotesque',sans-serif;margin:12px 0 12px;letter-spacing:-.02em">ОСТЕКЛЕНИЕ<br>БЕЗ СЮРПРИЗОВ<br>В СМЕТЕ</h1>
+    <p style="margin:0 0 20px;color:#10233fc4;font-size:16px">Замер бесплатно. Считаем при вас, монтируем своими бригадами, гарантию отдаём на бумаге — 20 лет.</p>
+    <div style="display:flex;flex-direction:column;gap:9px">
+      <a href="tel:+79689531320" style="display:flex;align-items:center;justify-content:space-between;min-height:54px;padding:0 18px;background:#d81f26;color:#fff;text-decoration:none;font:600 17px 'IBM Plex Sans',sans-serif">+7 968 953-13-20<span style="font:500 11px 'IBM Plex Mono',monospace;opacity:.8">ЗВОНОК</span></a>
+      <a href="#" style="display:flex;align-items:center;justify-content:space-between;min-height:54px;padding:0 18px;background:#10233f;color:#fff;text-decoration:none;font:600 16px 'IBM Plex Sans',sans-serif">Заказать замер<span style="font:500 11px 'IBM Plex Mono',monospace;opacity:.8">15 МИН</span></a>
+    </div>
+  </div>
+
+  <div style="height:220px;display:flex;align-items:flex-end;padding:12px;background:repeating-linear-gradient(90deg,#10233f14,#10233f14 1px,transparent 1px,transparent 28px),repeating-linear-gradient(0deg,#10233f14,#10233f14 1px,transparent 1px,transparent 28px),#f4f6f8"><span style="font:11px 'IBM Plex Mono',monospace;color:#10233f99">фото: монтаж панорамного остекления</span></div>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);border-bottom:2px solid #10233f">
+    <div style="padding:16px 12px;border-right:1px solid #10233f33"><div style="font:800 28px/1 'Bricolage Grotesque',sans-serif">20</div><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99;margin-top:4px">ЛЕТ РАБОТЫ</div></div>
+    <div style="padding:16px 12px;border-right:1px solid #10233f33"><div style="font:800 28px/1 'Bricolage Grotesque',sans-serif">5000</div><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99;margin-top:4px">КЛИЕНТОВ</div></div>
+    <div style="padding:16px 12px"><div style="font:800 28px/1 'Bricolage Grotesque',sans-serif">20</div><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99;margin-top:4px">ЛЕТ ГАРАНТИИ</div></div>
+  </div>
+
+  <div style="padding:26px 18px;background:#10233f;color:#fff">
+    <div style="font:500 11px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#ffffff99">РАСЧЁТ / ШАГ 1 ИЗ 2</div>
+    <h2 style="font:800 26px/1.05 'Bricolage Grotesque',sans-serif;margin:8px 0 16px;color:#fff">ПРЕДВАРИТЕЛЬНАЯ ЦЕНА</h2>
+    <div style="font:500 11px 'IBM Plex Mono',monospace;color:#ffffff99;margin-bottom:8px">ТИП КОНСТРУКЦИИ</div>
+    <div style="display:flex;gap:0;margin-bottom:16px;border:1px solid #ffffff44">
+      <span style="flex:1;text-align:center;padding:12px 6px;background:#d81f26;font:600 14px 'IBM Plex Sans',sans-serif">ПВХ</span>
+      <span style="flex:1;text-align:center;padding:12px 6px;border-left:1px solid #ffffff44;font-size:14px;color:#ffffffcc">Дерево</span>
+      <span style="flex:1;text-align:center;padding:12px 6px;border-left:1px solid #ffffff44;font-size:14px;color:#ffffffcc">Алюминий</span>
+    </div>
+    <div style="display:flex;gap:10px;margin-bottom:16px">
+      <div style="flex:1"><div style="font:500 11px 'IBM Plex Mono',monospace;color:#ffffff99;margin-bottom:6px">ШИРИНА, ММ</div><div style="min-height:46px;display:flex;align-items:center;padding:0 12px;background:#0b1a30;border:1px solid #ffffff33;color:#ffffffb3">1300</div></div>
+      <div style="flex:1"><div style="font:500 11px 'IBM Plex Mono',monospace;color:#ffffff99;margin-bottom:6px">ВЫСОТА, ММ</div><div style="min-height:46px;display:flex;align-items:center;padding:0 12px;background:#0b1a30;border:1px solid #ffffff33;color:#ffffffb3">1400</div></div>
+    </div>
+    <a href="tel:+79689531320" style="display:flex;align-items:center;justify-content:center;min-height:52px;background:#fff;color:#10233f;text-decoration:none;font:600 16px 'IBM Plex Sans',sans-serif">Получить расчёт</a>
+  </div>
+
+  <div style="padding:28px 18px 4px">
+    <h2 style="font:800 26px/1.05 'Bricolage Grotesque',sans-serif;margin:0 0 16px">КАТАЛОГ</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;background:#10233f22">
+      <div style="background:#fff;padding:14px 12px"><div style="height:74px;margin-bottom:10px;background:repeating-linear-gradient(90deg,#10233f14,#10233f14 1px,transparent 1px,transparent 20px),#f4f6f8"></div><div style="font:700 15px 'Bricolage Grotesque',sans-serif">Окна ПВХ</div><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99;margin-top:4px">ОТ 5 ДНЕЙ</div></div>
+      <div style="background:#fff;padding:14px 12px"><div style="height:74px;margin-bottom:10px;background:repeating-linear-gradient(90deg,#10233f14,#10233f14 1px,transparent 1px,transparent 20px),#f4f6f8"></div><div style="font:700 15px 'Bricolage Grotesque',sans-serif">Деревянные</div><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99;margin-top:4px">КЛЕЁНЫЙ БРУС</div></div>
+      <div style="background:#fff;padding:14px 12px"><div style="height:74px;margin-bottom:10px;background:repeating-linear-gradient(90deg,#10233f14,#10233f14 1px,transparent 1px,transparent 20px),#f4f6f8"></div><div style="font:700 15px 'Bricolage Grotesque',sans-serif">Балконы</div><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99;margin-top:4px">ПОД КЛЮЧ</div></div>
+      <div style="background:#fff;padding:14px 12px"><div style="height:74px;margin-bottom:10px;background:repeating-linear-gradient(90deg,#10233f14,#10233f14 1px,transparent 1px,transparent 20px),#f4f6f8"></div><div style="font:700 15px 'Bricolage Grotesque',sans-serif">Алюминий</div><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99;margin-top:4px">ВИТРАЖИ</div></div>
+    </div>
+    <a href="#" style="display:inline-block;margin-top:14px;color:#d81f26;font:600 15px 'IBM Plex Sans',sans-serif;text-decoration:none">Весь каталог →</a>
+  </div>
+
+  <div style="margin-top:26px;padding:26px 18px;background:#eef1f5;border-top:2px solid #10233f;border-bottom:2px solid #10233f">
+    <h2 style="font:800 26px/1.05 'Bricolage Grotesque',sans-serif;margin:0 0 14px">СРАВНЕНИЕ</h2>
+    <div style="display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;font-size:13px;background:#10233f22;gap:1px">
+      <div style="background:#eef1f5;padding:9px 6px;font:500 10px 'IBM Plex Mono',monospace;color:#10233f99"></div>
+      <div style="background:#eef1f5;padding:9px 6px;font:500 10px 'IBM Plex Mono',monospace;color:#10233f99">ПВХ</div>
+      <div style="background:#eef1f5;padding:9px 6px;font:500 10px 'IBM Plex Mono',monospace;color:#10233f99">ДЕРЕВО</div>
+      <div style="background:#eef1f5;padding:9px 6px;font:500 10px 'IBM Plex Mono',monospace;color:#10233f99">АЛЮМ.</div>
+      <div style="background:#eef1f5;padding:10px 6px">Цена</div><div style="background:#eef1f5;padding:10px 6px">низкая</div><div style="background:#eef1f5;padding:10px 6px">выше</div><div style="background:#eef1f5;padding:10px 6px">средняя</div>
+      <div style="background:#eef1f5;padding:10px 6px">Тепло</div><div style="background:#eef1f5;padding:10px 6px">высокое</div><div style="background:#eef1f5;padding:10px 6px">высокое</div><div style="background:#eef1f5;padding:10px 6px">среднее</div>
+      <div style="background:#eef1f5;padding:10px 6px">Срок</div><div style="background:#eef1f5;padding:10px 6px">40 лет</div><div style="background:#eef1f5;padding:10px 6px">50 лет</div><div style="background:#eef1f5;padding:10px 6px">50 лет</div>
+      <div style="background:#eef1f5;padding:10px 6px">Уход</div><div style="background:#eef1f5;padding:10px 6px">простой</div><div style="background:#eef1f5;padding:10px 6px">нужен</div><div style="background:#eef1f5;padding:10px 6px">простой</div>
+    </div>
+  </div>
+
+  <div style="padding:26px 18px 0">
+    <h2 style="font:800 26px/1.05 'Bricolage Grotesque',sans-serif;margin:0 0 16px">ПОРЯДОК РАБОТ</h2>
+    <div style="display:flex;flex-direction:column">
+      <div style="display:flex;gap:14px;padding:14px 0;border-top:1px solid #10233f33"><div style="font:500 11px 'IBM Plex Mono',monospace;color:#d81f26;width:26px;flex:none;padding-top:3px">01</div><div><div style="font:700 16px 'Bricolage Grotesque',sans-serif">Звонок и замер</div><div style="font-size:14px;color:#10233fa6">Выезд в удобное время, замер бесплатно.</div></div></div>
+      <div style="display:flex;gap:14px;padding:14px 0;border-top:1px solid #10233f33"><div style="font:500 11px 'IBM Plex Mono',monospace;color:#d81f26;width:26px;flex:none;padding-top:3px">02</div><div><div style="font:700 16px 'Bricolage Grotesque',sans-serif">Смета и договор</div><div style="font-size:14px;color:#10233fa6">Цена фиксируется, доплат по ходу нет.</div></div></div>
+      <div style="display:flex;gap:14px;padding:14px 0;border-top:1px solid #10233f33"><div style="font:500 11px 'IBM Plex Mono',monospace;color:#d81f26;width:26px;flex:none;padding-top:3px">03</div><div><div style="font:700 16px 'Bricolage Grotesque',sans-serif">Монтаж</div><div style="font-size:14px;color:#10233fa6">Штатные бригады, соблюдение ГОСТ.</div></div></div>
+      <div style="display:flex;gap:14px;padding:14px 0;border-top:1px solid #10233f33;border-bottom:1px solid #10233f33"><div style="font:500 11px 'IBM Plex Mono',monospace;color:#d81f26;width:26px;flex:none;padding-top:3px">04</div><div><div style="font:700 16px 'Bricolage Grotesque',sans-serif">Приёмка</div><div style="font-size:14px;color:#10233fa6">Акт, гарантийный талон, уборка.</div></div></div>
+    </div>
+  </div>
+
+  <div style="padding:26px 18px 0">
+    <h2 style="font:800 26px/1.05 'Bricolage Grotesque',sans-serif;margin:0 0 6px">ДОКУМЕНТЫ</h2>
+    <p style="margin:0 0 14px;font-size:14px;color:#10233fa6">Гарантия 20 лет прописана в договоре, комплектующие сертифицированы.</p>
+    <div style="display:flex;gap:8px">
+      <div style="flex:1;height:104px;background:repeating-linear-gradient(90deg,#10233f14,#10233f14 1px,transparent 1px,transparent 18px),#f4f6f8;border:1px solid #10233f33;display:flex;align-items:flex-end;padding:7px"><span style="font:10px 'IBM Plex Mono',monospace;color:#10233f99">СЕРТИФИКАТ</span></div>
+      <div style="flex:1;height:104px;background:repeating-linear-gradient(90deg,#10233f14,#10233f14 1px,transparent 1px,transparent 18px),#f4f6f8;border:1px solid #10233f33;display:flex;align-items:flex-end;padding:7px"><span style="font:10px 'IBM Plex Mono',monospace;color:#10233f99">ДОГОВОР</span></div>
+      <div style="flex:1;height:104px;background:repeating-linear-gradient(90deg,#10233f14,#10233f14 1px,transparent 1px,transparent 18px),#f4f6f8;border:1px solid #10233f33;display:flex;align-items:flex-end;padding:7px"><span style="font:10px 'IBM Plex Mono',monospace;color:#10233f99">ГОСТ</span></div>
+    </div>
+  </div>
+
+  <div style="padding:26px 18px 0">
+    <h2 style="font:800 26px/1.05 'Bricolage Grotesque',sans-serif;margin:0 0 12px">ВОПРОСЫ</h2>
+    <div>
+      <div style="padding:13px 0;border-top:1px solid #10233f33"><div style="display:flex;justify-content:space-between;gap:10px;font-weight:600;font-size:15px">Сколько ждать монтаж?<span style="color:#d81f26">−</span></div><p style="margin:8px 0 0;font-size:14px;color:#10233fa6">5–10 рабочих дней после замера — столько занимает изготовление.</p></div>
+      <div style="padding:13px 0;border-top:1px solid #10233f33;display:flex;justify-content:space-between;gap:10px;font-weight:600;font-size:15px">Замер бесплатный?<span style="color:#d81f26">+</span></div>
+      <div style="padding:13px 0;border-top:1px solid #10233f33;display:flex;justify-content:space-between;gap:10px;font-weight:600;font-size:15px">Ставите зимой?<span style="color:#d81f26">+</span></div>
+      <div style="padding:13px 0;border-top:1px solid #10233f33;border-bottom:1px solid #10233f33;display:flex;justify-content:space-between;gap:10px;font-weight:600;font-size:15px">Вывозите старые рамы?<span style="color:#d81f26">+</span></div>
+    </div>
+  </div>
+
+  <div style="margin-top:26px;padding:26px 18px;background:#eef1f5;border-top:2px solid #10233f">
+    <h2 style="font:800 24px/1.05 'Bricolage Grotesque',sans-serif;margin:0 0 14px">ОТЗЫВЫ</h2>
+    <div style="background:#fff;padding:16px;border-left:3px solid #d81f26;margin-bottom:10px"><p style="margin:0 0 6px;font-size:15px">«Работали быстро и аккуратно, окна стоят уже 5 лет — никаких нареканий.»</p><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99">МАРИНА, ХИМКИ</div></div>
+    <div style="background:#fff;padding:16px;border-left:3px solid #d81f26"><p style="margin:0 0 6px;font-size:15px">«Замер и монтаж день в день с договором. Спасибо за уборку после работ.»</p><div style="font:500 11px 'IBM Plex Mono',monospace;color:#10233f99">ИГОРЬ, МОСКВА</div></div>
+  </div>
+
+  <div style="padding:26px 18px 0">
+    <h2 style="font:800 24px/1.05 'Bricolage Grotesque',sans-serif;margin:0 0 14px">СОВЕТЫ</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div style="display:flex;gap:12px;align-items:center"><div style="width:62px;height:50px;flex:none;background:repeating-linear-gradient(90deg,#10233f14,#10233f14 1px,transparent 1px,transparent 16px),#f4f6f8"></div><div style="font-size:14px;font-weight:600">Сколько камер нужно профилю в Москве</div></div>
+      <div style="display:flex;gap:12px;align-items:center"><div style="width:62px;height:50px;flex:none;background:repeating-linear-gradient(90deg,#10233f14,#10233f14 1px,transparent 1px,transparent 16px),#f4f6f8"></div><div style="font-size:14px;font-weight:600">Как проверить качество монтажа</div></div>
+      <div style="display:flex;gap:12px;align-items:center"><div style="width:62px;height:50px;flex:none;background:repeating-linear-gradient(90deg,#10233f14,#10233f14 1px,transparent 1px,transparent 16px),#f4f6f8"></div><div style="font-size:14px;font-weight:600">Тёплый балкон: что нужно, кроме окон</div></div>
+    </div>
+  </div>
+
+  <div style="margin-top:28px;padding:24px 18px;background:#10233f;color:#fff">
+    <img src="assets/logo.png" alt="Окна-Маркет" style="height:22px;width:auto;filter:brightness(0) invert(1);margin-bottom:14px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:14px;margin-bottom:16px">
+      <a href="#" style="color:#fff;text-decoration:none">Каталог</a><a href="#" style="color:#fff;text-decoration:none">О компании</a>
+      <a href="#" style="color:#fff;text-decoration:none">Гарантии</a><a href="#" style="color:#fff;text-decoration:none">Контакты</a>
+    </div>
+    <div style="font:500 11px 'IBM Plex Mono',monospace;color:#ffffff99">МОСКВА И МО · 9:00–20:00 · +7 968 953-13-20</div>
+  </div>
+
+  <div style="position:sticky;bottom:0;display:flex;gap:0;background:#fff;border-top:2px solid #10233f">
+    <a href="tel:+79689531320" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;background:#d81f26;color:#fff;text-decoration:none;font:600 16px 'IBM Plex Sans',sans-serif">Позвонить</a>
+    <a href="#" style="display:flex;align-items:center;justify-content:center;min-height:52px;padding:0 20px;background:#10233f;color:#fff;text-decoration:none;font:600 15px 'IBM Plex Sans',sans-serif">Замер</a>
+  </div>
+</div>
+</div>
+
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>«Вечер» — тёмная графитовая тема, латунный акцент, спокойный премиум</div>
+<div class="dv-card" style="background:#17191a;color:#eeeae1;font-family:Manrope,sans-serif;font-size:15px;line-height:1.55">
+
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;border-bottom:1px solid #ffffff1f">
+    <img src="assets/logo.png" alt="Окна-Маркет" style="height:26px;width:auto;filter:grayscale(1) brightness(1.6)">
+    <a href="tel:+79689531320" style="display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 16px;border:1px solid #c9963f;color:#c9963f;text-decoration:none;font:700 14px Manrope,sans-serif;border-radius:3px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>Позвонить</a>
+  </div>
+
+  <div style="padding:30px 20px 26px">
+    <div style="font:700 11px Manrope,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#c9963f">Окна-Маркет · 20 лет · Москва и МО</div>
+    <h1 style="font:400 42px/1.06 Petrona,serif;margin:14px 0 12px">Окна, к которым<br>больше не нужно<br>возвращаться</h1>
+    <p style="margin:0 0 22px;color:#eeeae1b3;font-size:16px">Замер бесплатно, монтаж своими мастерами, гарантия 20 лет. За 20 лет — 5000 клиентов в Москве и области.</p>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <a href="tel:+79689531320" style="display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;background:#c9963f;color:#17191a;text-decoration:none;font:700 17px Manrope,sans-serif;border-radius:3px">+7 968 953-13-20</a>
+      <a href="#" style="display:flex;align-items:center;justify-content:center;min-height:54px;border:1px solid #ffffff33;color:#eeeae1;text-decoration:none;font:700 16px Manrope,sans-serif;border-radius:3px">Заказать замер</a>
+    </div>
+  </div>
+
+  <div style="height:230px;display:flex;align-items:flex-end;padding:14px;background:repeating-linear-gradient(135deg,#ffffff12,#ffffff12 9px,#ffffff06 9px,#ffffff06 18px)"><span style="font:11px ui-monospace,Menlo,monospace;color:#eeeae199">фото: панорамное остекление вечером</span></div>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ffffff1f">
+    <div style="background:#17191a;padding:18px 12px"><div style="font:400 30px/1 Petrona,serif;color:#c9963f">20</div><div style="font-size:12px;color:#eeeae199;margin-top:4px">лет на рынке</div></div>
+    <div style="background:#17191a;padding:18px 12px"><div style="font:400 30px/1 Petrona,serif;color:#c9963f">5000</div><div style="font-size:12px;color:#eeeae199;margin-top:4px">клиентов</div></div>
+    <div style="background:#17191a;padding:18px 12px"><div style="font:400 30px/1 Petrona,serif;color:#c9963f">20</div><div style="font-size:12px;color:#eeeae199;margin-top:4px">лет гарантии</div></div>
+  </div>
+
+  <div style="margin:26px 20px 0;padding:24px 18px;background:#212425;border:1px solid #ffffff14;border-radius:4px">
+    <h2 style="font:400 27px/1.08 Petrona,serif;margin:0 0 6px">Предварительный расчёт</h2>
+    <p style="margin:0 0 18px;font-size:14px;color:#eeeae1a6">Выберите тип и размер — назовём цену по телефону.</p>
+    <div style="font:700 11px Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#eeeae199;margin-bottom:8px">Тип окна</div>
+    <div style="display:flex;gap:8px;margin-bottom:18px">
+      <span style="flex:1;text-align:center;padding:12px 6px;background:#c9963f;color:#17191a;font:700 14px Manrope,sans-serif;border-radius:3px">ПВХ</span>
+      <span style="flex:1;text-align:center;padding:12px 6px;border:1px solid #ffffff33;font-size:14px;border-radius:3px;color:#eeeae1cc">Дерево</span>
+      <span style="flex:1;text-align:center;padding:12px 6px;border:1px solid #ffffff33;font-size:14px;border-radius:3px;color:#eeeae1cc">Алюминий</span>
+    </div>
+    <div style="display:flex;gap:10px;margin-bottom:18px">
+      <div style="flex:1"><div style="font:700 11px Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#eeeae199;margin-bottom:6px">Ширина, мм</div><div style="min-height:46px;display:flex;align-items:center;padding:0 12px;background:#17191a;border:1px solid #ffffff2b;border-radius:3px;color:#eeeae199">1300</div></div>
+      <div style="flex:1"><div style="font:700 11px Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#eeeae199;margin-bottom:6px">Высота, мм</div><div style="min-height:46px;display:flex;align-items:center;padding:0 12px;background:#17191a;border:1px solid #ffffff2b;border-radius:3px;color:#eeeae199">1400</div></div>
+    </div>
+    <a href="tel:+79689531320" style="display:flex;align-items:center;justify-content:center;min-height:52px;background:#c9963f;color:#17191a;text-decoration:none;font:700 16px Manrope,sans-serif;border-radius:3px">Узнать цену</a>
+  </div>
+
+  <div style="padding:32px 20px 0">
+    <h2 style="font:400 30px/1.06 Petrona,serif;margin:0 0 18px">Что мы делаем</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:#212425;border-radius:4px;overflow:hidden"><div style="height:86px;background:repeating-linear-gradient(135deg,#ffffff12,#ffffff12 8px,#ffffff06 8px,#ffffff06 16px)"></div><div style="padding:12px"><div style="font:400 19px/1.1 Petrona,serif">Окна ПВХ</div><div style="font-size:12px;color:#eeeae199;margin-top:4px">Тёплые профили</div></div></div>
+      <div style="background:#212425;border-radius:4px;overflow:hidden"><div style="height:86px;background:repeating-linear-gradient(135deg,#ffffff12,#ffffff12 8px,#ffffff06 8px,#ffffff06 16px)"></div><div style="padding:12px"><div style="font:400 19px/1.1 Petrona,serif">Деревянные</div><div style="font-size:12px;color:#eeeae199;margin-top:4px">Клеёный брус</div></div></div>
+      <div style="background:#212425;border-radius:4px;overflow:hidden"><div style="height:86px;background:repeating-linear-gradient(135deg,#ffffff12,#ffffff12 8px,#ffffff06 8px,#ffffff06 16px)"></div><div style="padding:12px"><div style="font:400 19px/1.1 Petrona,serif">Балконы</div><div style="font-size:12px;color:#eeeae199;margin-top:4px">Под ключ</div></div></div>
+      <div style="background:#212425;border-radius:4px;overflow:hidden"><div style="height:86px;background:repeating-linear-gradient(135deg,#ffffff12,#ffffff12 8px,#ffffff06 8px,#ffffff06 16px)"></div><div style="padding:12px"><div style="font:400 19px/1.1 Petrona,serif">Алюминий</div><div style="font-size:12px;color:#eeeae199;margin-top:4px">Витражи, входы</div></div></div>
+    </div>
+    <a href="#" style="display:inline-block;margin-top:16px;color:#c9963f;font:700 15px Manrope,sans-serif;text-decoration:none">Весь каталог →</a>
+  </div>
+
+  <div style="margin:32px 0 0;padding:28px 20px;background:#212425">
+    <h2 style="font:400 28px/1.06 Petrona,serif;margin:0 0 16px">Какие окна выбрать</h2>
+    <div style="display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;font-size:13px">
+      <div style="padding:8px 6px"></div>
+      <div style="padding:8px 6px;font:700 10px Manrope,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#c9963f">ПВХ</div>
+      <div style="padding:8px 6px;font:700 10px Manrope,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#c9963f">Дерево</div>
+      <div style="padding:8px 6px;font:700 10px Manrope,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#c9963f">Алюм.</div>
+      <div style="padding:11px 6px;border-top:1px solid #ffffff1f;color:#eeeae1a6">Цена</div><div style="padding:11px 6px;border-top:1px solid #ffffff1f">низкая</div><div style="padding:11px 6px;border-top:1px solid #ffffff1f">выше</div><div style="padding:11px 6px;border-top:1px solid #ffffff1f">средняя</div>
+      <div style="padding:11px 6px;border-top:1px solid #ffffff1f;color:#eeeae1a6">Тепло</div><div style="padding:11px 6px;border-top:1px solid #ffffff1f">высокое</div><div style="padding:11px 6px;border-top:1px solid #ffffff1f">высокое</div><div style="padding:11px 6px;border-top:1px solid #ffffff1f">среднее</div>
+      <div style="padding:11px 6px;border-top:1px solid #ffffff1f;color:#eeeae1a6">Срок службы</div><div style="padding:11px 6px;border-top:1px solid #ffffff1f">40 лет</div><div style="padding:11px 6px;border-top:1px solid #ffffff1f">50 лет</div><div style="padding:11px 6px;border-top:1px solid #ffffff1f">50 лет</div>
+      <div style="padding:11px 6px;border-top:1px solid #ffffff1f;color:#eeeae1a6">Уход</div><div style="padding:11px 6px;border-top:1px solid #ffffff1f">простой</div><div style="padding:11px 6px;border-top:1px solid #ffffff1f">нужен</div><div style="padding:11px 6px;border-top:1px solid #ffffff1f">простой</div>
+    </div>
+  </div>
+
+  <div style="padding:32px 20px 0">
+    <h2 style="font:400 30px/1.06 Petrona,serif;margin:0 0 18px">Как проходит работа</h2>
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;gap:14px"><div style="font:400 24px/1 Petrona,serif;color:#c9963f;width:32px;flex:none">01</div><div><div style="font-weight:700;font-size:16px">Звонок и замер</div><div style="font-size:14px;color:#eeeae1a6">Приедем в удобное время, замерим бесплатно.</div></div></div>
+      <div style="display:flex;gap:14px"><div style="font:400 24px/1 Petrona,serif;color:#c9963f;width:32px;flex:none">02</div><div><div style="font-weight:700;font-size:16px">Расчёт и договор</div><div style="font-size:14px;color:#eeeae1a6">Фиксируем цену, сроки и состав работ.</div></div></div>
+      <div style="display:flex;gap:14px"><div style="font:400 24px/1 Petrona,serif;color:#c9963f;width:32px;flex:none">03</div><div><div style="font-weight:700;font-size:16px">Монтаж</div><div style="font-size:14px;color:#eeeae1a6">Ставят наши мастера, не подрядчики.</div></div></div>
+      <div style="display:flex;gap:14px"><div style="font:400 24px/1 Petrona,serif;color:#c9963f;width:32px;flex:none">04</div><div><div style="font-weight:700;font-size:16px">Сдача и уборка</div><div style="font-size:14px;color:#eeeae1a6">Проверяем всё вместе, мусор увозим.</div></div></div>
+    </div>
+  </div>
+
+  <div style="margin:32px 20px 0;padding:24px 18px;border:1px solid #c9963f66;border-radius:4px">
+    <div style="font:700 11px Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#c9963f">Гарантии и документы</div>
+    <h2 style="font:400 27px/1.08 Petrona,serif;margin:8px 0 16px">20 лет гарантии — в договоре</h2>
+    <div style="display:flex;gap:10px">
+      <div style="flex:1;height:100px;background:repeating-linear-gradient(135deg,#ffffff12,#ffffff12 8px,#ffffff06 8px,#ffffff06 16px);display:flex;align-items:flex-end;padding:8px;border-radius:3px"><span style="font:10px ui-monospace,Menlo,monospace;color:#eeeae199">сертификат</span></div>
+      <div style="flex:1;height:100px;background:repeating-linear-gradient(135deg,#ffffff12,#ffffff12 8px,#ffffff06 8px,#ffffff06 16px);display:flex;align-items:flex-end;padding:8px;border-radius:3px"><span style="font:10px ui-monospace,Menlo,monospace;color:#eeeae199">договор</span></div>
+      <div style="flex:1;height:100px;background:repeating-linear-gradient(135deg,#ffffff12,#ffffff12 8px,#ffffff06 8px,#ffffff06 16px);display:flex;align-items:flex-end;padding:8px;border-radius:3px"><span style="font:10px ui-monospace,Menlo,monospace;color:#eeeae199">паспорт</span></div>
+    </div>
+  </div>
+
+  <div style="padding:32px 20px 0">
+    <h2 style="font:400 30px/1.06 Petrona,serif;margin:0 0 14px">Частые вопросы</h2>
+    <div>
+      <div style="padding:15px 0;border-top:1px solid #ffffff1f"><div style="display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:15px">Сколько ждать монтаж?<span style="color:#c9963f">−</span></div><p style="margin:8px 0 0;font-size:14px;color:#eeeae1a6">Обычно 5–10 рабочих дней после замера: столько занимает изготовление.</p></div>
+      <div style="padding:15px 0;border-top:1px solid #ffffff1f;display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:15px">Замер точно бесплатный?<span style="color:#c9963f">+</span></div>
+      <div style="padding:15px 0;border-top:1px solid #ffffff1f;display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:15px">Можно ставить окна зимой?<span style="color:#c9963f">+</span></div>
+      <div style="padding:15px 0;border-top:1px solid #ffffff1f;border-bottom:1px solid #ffffff1f;display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:15px">Вывозите старые рамы?<span style="color:#c9963f">+</span></div>
+    </div>
+  </div>
+
+  <div style="margin:32px 0 0;padding:28px 20px;background:#212425">
+    <h2 style="font:400 28px/1.06 Petrona,serif;margin:0 0 16px">Отзывы</h2>
+    <p style="margin:0 0 8px;font:400 19px/1.45 Petrona,serif">«Работали быстро и аккуратно, окна стоят уже 5 лет — никаких нареканий.»</p>
+    <div style="font-size:13px;color:#eeeae199;margin-bottom:20px">Марина, Химки</div>
+    <p style="margin:0 0 8px;font:400 19px/1.45 Petrona,serif">«Замер и монтаж день в день с договором. Спасибо за уборку после работ.»</p>
+    <div style="font-size:13px;color:#eeeae199">Игорь, Москва</div>
+  </div>
+
+  <div style="padding:32px 20px 0">
+    <h2 style="font:400 28px/1.06 Petrona,serif;margin:0 0 14px">Советы по выбору</h2>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;gap:12px;align-items:center"><div style="width:64px;height:52px;flex:none;background:repeating-linear-gradient(135deg,#ffffff12,#ffffff12 8px,#ffffff06 8px,#ffffff06 16px);border-radius:3px"></div><div style="font-size:14px;font-weight:700">Сколько камер нужно профилю в Москве</div></div>
+      <div style="display:flex;gap:12px;align-items:center"><div style="width:64px;height:52px;flex:none;background:repeating-linear-gradient(135deg,#ffffff12,#ffffff12 8px,#ffffff06 8px,#ffffff06 16px);border-radius:3px"></div><div style="font-size:14px;font-weight:700">Как понять, что окно поставили правильно</div></div>
+      <div style="display:flex;gap:12px;align-items:center"><div style="width:64px;height:52px;flex:none;background:repeating-linear-gradient(135deg,#ffffff12,#ffffff12 8px,#ffffff06 8px,#ffffff06 16px);border-radius:3px"></div><div style="font-size:14px;font-weight:700">Тёплый балкон: что нужно, кроме окон</div></div>
+    </div>
+  </div>
+
+  <div style="margin-top:32px;padding:26px 20px;border-top:1px solid #ffffff1f">
+    <img src="assets/logo.png" alt="Окна-Маркет" style="height:24px;width:auto;filter:grayscale(1) brightness(1.6);margin-bottom:14px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:14px;margin-bottom:18px">
+      <a href="#" style="color:#eeeae1;text-decoration:none">Каталог</a><a href="#" style="color:#eeeae1;text-decoration:none">О компании</a>
+      <a href="#" style="color:#eeeae1;text-decoration:none">Гарантии</a><a href="#" style="color:#eeeae1;text-decoration:none">Контакты</a>
+    </div>
+    <div style="font-size:14px;color:#eeeae1a6">Москва и Московская область<br>Ежедневно 9:00–20:00</div>
+  </div>
+
+  <div style="position:sticky;bottom:0;display:flex;gap:10px;padding:12px 16px;background:#17191af2;border-top:1px solid #ffffff1f">
+    <a href="tel:+79689531320" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:50px;background:#c9963f;color:#17191a;text-decoration:none;font:700 16px Manrope,sans-serif;border-radius:3px">Позвонить</a>
+    <a href="#" style="display:flex;align-items:center;justify-content:center;min-height:50px;padding:0 18px;border:1px solid #ffffff33;color:#eeeae1;text-decoration:none;font:700 15px Manrope,sans-serif;border-radius:3px">Замер</a>
+  </div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Дальше можно: «беру <a class="dv-oid" href="#1a">1a</a>, разверни на все 5 страниц» · «сделай <a class="dv-oid" href="#1b">1b</a>, но фон теплее» · «покажи <a class="dv-oid" href="#1c">1c</a> в светлой версии»</p>
+</section>
+
+</x-dc>
+</body>
+</html>
